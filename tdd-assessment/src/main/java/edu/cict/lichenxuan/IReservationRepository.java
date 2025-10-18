@@ -8,6 +8,8 @@ interface IReservationRepository {
 
     List<Reservation> findByUser(String userId);
 
+    List<Reservation> findByBook(String bookId);
+
     void delete(String userId, String bookId);
 }
 
