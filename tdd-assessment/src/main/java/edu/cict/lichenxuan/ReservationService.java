@@ -1,7 +1,6 @@
 package edu.cict.lichenxuan;
 
 import java.util.List;
-import java.util.Objects;
 
 public class ReservationService {
 
@@ -91,7 +90,7 @@ public class ReservationService {
         // TODO: Implement using TDD
         MemoryReservationRepository memReservRepo = casting_IReservationRepository();
 
-        return memReservRepo.findByUser(bookId);
+        return memReservRepo.findByBook(bookId);
     }
 }
 
